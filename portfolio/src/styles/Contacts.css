@@ -1,65 +1,132 @@
-@layer base {
-	* {
-		box-sizing: border-box;
-	}
+/* Contacts Page Styles */
+
+.background {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 2rem;
 }
 
-@layer components {
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
 
-	.background {
-		@apply min-h-screen flex items-center justify-center bg-slate-950;
-	}
+form {
+    width: 100%;
+    max-width: 500px;
+}
 
-	.container {
-		@apply w-full px-4 sm:px-8 flex justify-center;
-	}
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    background: #0f3460;
+    border: 1px solid #16213e;
+}
 
-	form {
-		@apply w-full max-w-md;
-	}
+fieldset fieldset {
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #533483;
+    background: rgba(83, 52, 131, 0.1);
+}
 
-	form > fieldset {
-		@apply flex flex-col gap-4 p-6 sm:p-8
-		       rounded-2xl shadow-lg
-		       bg-slate-900;
-	}
+fieldset legend {
+    color: #e94560;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
 
-	fieldset fieldset {
-		@apply p-2 rounded-xl border border-slate-700;
-	}
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background: #16213e;
+    color: white;
+    border: 1px solid #533483;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
 
-	input,
-	textarea {
-		@apply w-full px-4 py-2 text-base
-		       rounded-full bg-slate-800 text-white
-		       border border-slate-600
-		       focus:outline-none focus:ring-2 focus:ring-indigo-500;
-	}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+    background: #1a2a4a;
+}
 
-	textarea {
-		@apply rounded-xl min-h-[120px] resize-y;
-	}
+textarea {
+    border-radius: 0.75rem;
+    min-height: 120px;
+    resize: vertical;
+}
 
-	button {
-		@apply mx-auto px-6 py-2 rounded-full
-		       bg-indigo-600 text-white
-		       transition hover:bg-indigo-700
-		       disabled:opacity-50 disabled:cursor-not-allowed;
-	}
+button {
+    margin: 0 auto;
+    display: block;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #e94560 0%, #d63447 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
 
-	.status {
-		@apply mt-2 text-center font-bold min-h-[20px];
-	}
+button:hover:not(:disabled) {
+    background: linear-gradient(135deg, #d63447 0%, #c42340 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.3);
+}
 
-	.status-success {
-		@apply text-green-500;
-	}
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
-	.status-error {
-		@apply text-red-500;
-	}
+.status {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    min-height: 20px;
+    font-size: 0.95rem;
+}
 
-	.status-info {
-		@apply text-blue-500;
-	}
+.status-success {
+    color: #4ade80;
+}
+
+.status-error {
+    color: #f87171;
+}
+
+.status-info {
+    color: #60a5fa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .background {
+        padding: 1rem;
+    }
+    
+    form > fieldset {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        gap: 1rem;
+    }
 }

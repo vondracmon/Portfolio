@@ -4,8 +4,7 @@ import Landing from "./pages/landing";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
 import Education from "./pages/education";
-import Contacts from "./pages/contacts";
-import sidebar from "./components/sidebar";
+import Contacts from "./pages/Contacts";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </Router>
-    
   );
 }
 

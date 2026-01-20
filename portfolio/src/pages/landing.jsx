@@ -1,16 +1,12 @@
-import "../styles/Landing.css"; 
+import "../styles/Landing.css";
 
-export default function Landing() {
+const Landing = () => {
   return (
     <div className="landing-container">
-      <div className="landing-background">
-        <div className="welcome">
-          <div className="pic"></div>
-          <h1>Welcome to My Portfolio</h1>
-          <p>This is the landing page.</p>
-        
-        </div>
-      </div>
+      <h1 className="landing-title">Welcome to My Portfolio hello</h1>
+      <p className="landing-text">Hi, I'm Jm, a budding IT student and developer.</p>
     </div>
   );
-}
+};
+
+export default Landing;

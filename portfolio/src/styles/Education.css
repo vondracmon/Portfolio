@@ -1,0 +1,123 @@
+/* Education Page Styles */
+
+.education-container {
+    min-height: calc(100vh - 60px);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.education-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: slideInDown 0.8s ease-out;
+}
+
+.education-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.education-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+    border-left-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.education-item .school {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 0.75rem;
+}
+
+.education-item .year {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.education-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .education-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .education-header p {
+        font-size: 1rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .education-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .education-item .school {
+        font-size: 1rem;
+    }
+
+    .education-item p {
+        font-size: 0.95rem;
+    }
+}
