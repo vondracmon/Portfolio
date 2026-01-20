@@ -1,22 +1,34 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "../styles/Navbar.css"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  const isHome = location.pathname === "/";
 
   return (
     <nav className="navbar">
-      <div className="logo">MyPortfolio</div>
+      <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
+        {isHome ? (
+          "MyPortfolio"
+        ) : (
+          <div className="logo-image"></div>
+        )}
+      </Link>
       <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
         Menu
       </button>
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
-        <li><Link to="/">Landing</Link></li>
-        <li><Link to="/home">Home</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/education">Education</Link></li>
-        <li><Link to="/contacts">Contact</Link></li>
+        {!isHome && <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>}
+        <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
+        <li><Link to="/education" onClick={() => setIsOpen(false)}>Education</Link></li>
+        <li><Link to="/contacts" onClick={() => setIsOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
   );
