@@ -1,0 +1,10 @@
+tailwind dependencies installation commands:
+
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+npm install @craco/craco
+
+npx tailwindcss-cli@latest init
+
+FOR ROUTING:
+
+npm install react-router-dom

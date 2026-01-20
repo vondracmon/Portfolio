@@ -1,0 +1,65 @@
+@layer base {
+	* {
+		box-sizing: border-box;
+	}
+}
+
+@layer components {
+
+	.background {
+		@apply min-h-screen flex items-center justify-center bg-slate-950;
+	}
+
+	.container {
+		@apply w-full px-4 sm:px-8 flex justify-center;
+	}
+
+	form {
+		@apply w-full max-w-md;
+	}
+
+	form > fieldset {
+		@apply flex flex-col gap-4 p-6 sm:p-8
+		       rounded-2xl shadow-lg
+		       bg-slate-900;
+	}
+
+	fieldset fieldset {
+		@apply p-2 rounded-xl border border-slate-700;
+	}
+
+	input,
+	textarea {
+		@apply w-full px-4 py-2 text-base
+		       rounded-full bg-slate-800 text-white
+		       border border-slate-600
+		       focus:outline-none focus:ring-2 focus:ring-indigo-500;
+	}
+
+	textarea {
+		@apply rounded-xl min-h-[120px] resize-y;
+	}
+
+	button {
+		@apply mx-auto px-6 py-2 rounded-full
+		       bg-indigo-600 text-white
+		       transition hover:bg-indigo-700
+		       disabled:opacity-50 disabled:cursor-not-allowed;
+	}
+
+	.status {
+		@apply mt-2 text-center font-bold min-h-[20px];
+	}
+
+	.status-success {
+		@apply text-green-500;
+	}
+
+	.status-error {
+		@apply text-red-500;
+	}
+
+	.status-info {
+		@apply text-blue-500;
+	}
+}
