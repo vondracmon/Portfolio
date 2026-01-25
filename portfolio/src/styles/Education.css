@@ -40,6 +40,20 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     animation: slideInLeft 0.8s ease-out;
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid rgba(79, 172, 254, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.2);
 }
 
 .education-item.clickable {

@@ -19,7 +19,7 @@ export default function Education() {
       id: 2,
       degree: "High School Diploma",
       school: "Marcelo H. del Pilar National High School",
-      year: "Change later once confirmed",
+      year: "2022",
       description: "Completed high school education with emphasis on mathematics and computer science courses.",
       image: null
     },
@@ -38,6 +38,14 @@ export default function Education() {
       year: "2025",
       description: "Completed a comprehensive course on modern web development with JavaScript.",
       image: JavaScriptCert
+    },
+    {
+      id: 5,
+      degree: "CS BYTE",
+      school: "Community of Students: Bridging Youth and Technology for Evolution",
+      year: "2023 - 2026",
+      description: "A BulSU Meneses Campus student organization for BSIT students.",
+      image: null
     }
   ];
 

@@ -21,11 +21,13 @@ export default function Navbar() {
           <div className="logo-image"></div>
         )}
       </Link>
+      
       <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
         Menu
       </button>
+
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
-        {!isHome && <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>}
+        {!isHome && <li><Link to="/" onClick={() => setIsOpen(false)}>About</Link></li>}
         <li><Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
         <li><Link to="/education" onClick={() => setIsOpen(false)}>Education</Link></li>
         <li><Link to="/contacts" onClick={() => setIsOpen(false)}>Contact</Link></li>
