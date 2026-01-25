@@ -10,9 +10,7 @@ function App() {
 
 	const socialLinks = [
 		{ name: "GitHub", url: "https://github.com/vondracmon", icon: "🐙", label: "GitHub" },
-		{ name: "LinkedIn", url: "https://linkedin.com", icon: "💼", label: "LinkedIn" },
-		{ name: "Email", url: "mailto:loyolajohnmark010@gmail.com", icon: "✉️", label: "Email" },
-		{ name: "Twitter", url: "https://twitter.com", icon: "𝕏", label: "Twitter" }
+		{ name: "LinkedIn", url: "https://linkedin.com", icon: "💼", label: "LinkedIn" }
 	];
 
 	async function handleSubmit(e) {
