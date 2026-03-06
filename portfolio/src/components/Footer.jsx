@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>MyPortfolio</h3>
+          <h3>JML</h3>
           <p style={{fontStyle: "italic"}}>"For every code is a story waiting to be told."</p>
         </div>
 

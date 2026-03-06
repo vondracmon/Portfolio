@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="navbar">
       <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
         {isHome ? (
-          "MyPortfolio"
+          "JML"
         ) : (
           <div className="logo-image"></div>
         )}
