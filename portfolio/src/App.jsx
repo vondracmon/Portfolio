@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Navbar />
-        <main style={{ flex: 1 }}>
+        <main style={{ flex: 1, background: "#0f1b4c" }}>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/projects" element={<Projects />} />

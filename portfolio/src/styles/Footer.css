@@ -2,7 +2,7 @@
 
 .footer {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 5rem;
 }
 
@@ -13,6 +13,7 @@
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .footer-section {
@@ -71,8 +72,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(102, 126, 234, 0.2);
-    border: 2px solid rgba(102, 126, 234, 0.5);
+    background: rgba(29, 37, 70, 0.2);
+    border: 2px solid rgba(26, 33, 68, 0.5);
     border-radius: 50%;
     font-size: 1.3rem;
     text-decoration: none;

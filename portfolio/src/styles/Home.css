@@ -2,7 +2,7 @@
 
 .home-container {
     min-height: calc(100vh - 60px);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3766 0%, #3e2755 100%);
     padding: 2rem;
     color: white;
     display: flex;
