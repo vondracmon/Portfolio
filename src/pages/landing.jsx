@@ -37,8 +37,8 @@ const Landing = () => {
       </div>
 
       <div className="cta-section">
-        <a href="/projects" className="cta-button">View My Projects</a>
-        <a href="/contacts" className="cta-button cta-button-secondary">Get In Touch</a>
+        <link to="/projects" className="cta-button">View My Projects</link>
+        <link to="/contacts" className="cta-button cta-button-secondary">Get In Touch</link>
       </div>
     </div>
   );
